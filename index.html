@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<title>Hjärta</title>
+</head>
+<body>
+
+<script>
+
+var e = null;
+var visible = false;
+
+document.addEventListener('DOMContentLoaded', function() {
+	visible = true;
+	e = document.getElementById("blink");
+	window.setInterval(blink, 500);
+	});
+
+function blink () {
+	if (visible){
+		e.style.display = "none";
+	}
+	else {
+		e.style.display = "inline";
+	}
+	visible = !visible;
+	};
+	
+</script>
+<a id="blink">&lt; 3</a>
+</body>
+</html>
